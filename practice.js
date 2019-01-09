@@ -311,14 +311,19 @@ var colt = {
   After that console.log the length of the Array and make sure that it's equal to 4.
 */
 
-
+devMountainEmployees.push(tyler, cahlan, ryan, colt)
 
 /*
   Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-//Code Here
+for (let i = 0; i < devMountainEmployees.length; i++) {
+    let employee = devMountainEmployees[i]
+    if (employee.name === 'Cahlan') {
+      devMountainEmployees.splice(i, 1)
+    }
+  }
 
 
 
@@ -326,18 +331,17 @@ var colt = {
 
 
 /*
-  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of Data is to have an Array full of objects.
-  Create an empty array called users.
+  A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects)
+  of Data is to have an Array full of objects. Create an empty array called users.
 */
 
-//Code Here
+let users = []
 
 
 
 /*
-  Now add three user objects to your users array. Each user object should contain the following properties. name, email, password, username.
-
-  Include the following user1 object as one of the objects in your array.
+  Now add three user objects to your users array. Each user object should contain the following properties.
+  name, email, password, username. Include the following user1 object as one of the objects in your array.
 */
 
 // Do not edit the code below.
@@ -347,10 +351,24 @@ var user1 = {
     password: 'iLoveJavaScript',
     username: 'infiniteLoop'
 };
+
 // Do not edit the code above.
 
-//Code Here
+var user2 = {
+    name: 'Madonna',
+    email: 'madonna@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniteLoop'
+};
 
+var user3 = {
+    name: 'Michael Jackson',
+    email: 'mj3@gmail.com',
+    password: 'iLoveJavaScript',
+    username: 'infiniteLoop'
+};
+
+users.push(user1, user2, user3)
 
 
 /*
@@ -363,7 +381,12 @@ var user1 = {
   Once you find the particular index he's located in, delete him from the array.
 */
 
-//Code Here
+for (let i = 0; i < users.length; i++) {
+  let user = users[i]
+  if (user.email === 'tylermcginnis33@gmail.com') {
+    users.splice(i, 1)
+  }
+}
 
 
 
